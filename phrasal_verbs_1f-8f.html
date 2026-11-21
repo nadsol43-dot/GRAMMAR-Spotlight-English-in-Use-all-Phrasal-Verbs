@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phrasal Verbs · Units 1f–8f · English in Use</title>
+<style>
+  :root { --pink:#e6337a; --pink-dark:#b81f5f; --ink:#2b2b2b; --muted:#6b6b6b; --line:#f0d6e2; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--ink); background:#fff; }
+  header { background: linear-gradient(90deg, var(--pink), var(--pink-dark)); color:#fff; padding:22px 28px; }
+  header h1 { margin:0 0 4px; font-size:24px; }
+  header p { margin:0; opacity:.92; font-size:14px; }
+  main { max-width: 1000px; margin: 0 auto; padding: 20px 20px 40px; }
+  .search { width:100%; padding:11px 14px; font-size:16px; border:2px solid var(--line); border-radius:10px; margin-bottom:18px; }
+  .search:focus { outline:none; border-color: var(--pink); }
+  .verb { margin-bottom: 26px; border:2px solid var(--line); border-radius:12px; overflow:hidden; }
+  .verb h2 { margin:0; padding:10px 16px; background:#fdeef5; color:var(--pink-dark); font-size:20px; display:flex; justify-content:space-between; align-items:baseline; }
+  .verb h2 small { font-size:13px; color:var(--muted); font-weight:normal; }
+  table { width:100%; border-collapse: collapse; font-size:15px; }
+  th, td { text-align:left; padding:9px 12px; border-top:1px solid var(--line); vertical-align:top; }
+  th { background:#fff; color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+  td.pv { font-weight:bold; color:var(--ink); white-space:nowrap; }
+  td.unit { color:var(--muted); white-space:nowrap; }
+  td.ru { color:#4a2a3a; }
+  td.ex { font-style:italic; color:#444; }
+  tr.hidden { display:none; }
+  .verb.hidden { display:none; }
+  .legend { font-size:13px; color:var(--muted); margin:0 0 14px; }
+  footer { text-align:center; color:var(--muted); font-size:12px; padding:14px; border-top:1px solid var(--line); }
+  @media (max-width: 680px) {
+    table, thead, tbody, tr, th, td { display:block; }
+    thead { display:none; }
+    tr { border-top:1px solid var(--line); padding:6px 0; }
+    td { border:none; padding:3px 12px; }
+    td.pv { font-size:17px; }
+  }
+  @media print {
+    .search, .legend { display:none; }
+    header { background:#fff; color:#000; }
+    .verb { break-inside: avoid; }
+  }
+
+  .practice { padding:14px 16px 16px; background:#fffafc; border-top:2px solid var(--line); }
+  .practice h3 { margin:0 0 8px; font-size:15px; color:var(--pink-dark); }
+  .pitems { margin:0 0 10px; padding-left:22px; font-size:15px; line-height:1.9; }
+  .pitems li.ok { color:#1a7f37; } .pitems li.bad { color:#b3261e; }
+  .pitems input { font-size:15px; width:120px; padding:2px 6px; border:1px solid #d8a8c0; border-radius:6px; }
+  .pbtns button { font-size:14px; padding:6px 12px; margin-right:6px; border-radius:8px; border:1px solid var(--pink); background:#fff; color:var(--pink-dark); cursor:pointer; }
+  .pbtns button:first-child { background:var(--pink); color:#fff; }
+  .pscore { font-size:13px; color:var(--muted); margin-left:6px; }
+  .pcorr { color:#1a7f37; font-size:13px; margin-left:6px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Phrasal Verbs · Units 1f–8f</h1>
+  <p>English in Use · Spotlight 8 · Все фразовые глаголы из упражнений</p>
+</header>
+<main>
+  <input class="search" id="q" type="search" placeholder="Поиск: глагол, значение или пример…" aria-label="Поиск">
+  <p class="legend">Значения и перевод даны для удобства; сверяйте с Appendix 1 учебника.</p>
+
+  <section class="verb" data-verb="get">
+    <h2>get <small>1f</small></h2>
+    <table>
+      <thead><tr><th>Phrasal verb</th><th>Meaning</th><th>Перевод</th><th>Example</th><th>Unit</th></tr></thead>
+      <tbody>
+        <tr><td class="pv">get across</td><td>communicate successfully</td><td class="ru">донести (мысль)</td><td class="ex">Jane has difficulty in getting her ideas across.</td><td class="unit">1f</td></tr>
+        <tr><td class="pv">get along (with)</td><td>have a good relationship</td><td class="ru">ладить</td><td class="ex">Do you get along with your parents?</td><td class="unit">1f</td></tr>
+        <tr><td class="pv">get over with</td><td>finish something unpleasant</td><td class="ru">покончить с чем-то</td><td class="ex">The sooner we start, the sooner we get it over with.</td><td class="unit">1f</td></tr>
+        <tr><td class="pv">get down</td><td>make sb sad</td><td class="ru">угнетать, подавлять</td><td class="ex">This rainy weather gets me down.</td><td class="unit">1f</td></tr>
+        <tr><td class="pv">get over</td><td>recover from</td><td class="ru">оправиться от</td><td class="ex">Alice hasn't been able to get over the fact that she failed her exams.</td><td class="unit">1f</td></tr>
+      </tbody>
+    </table>
+  <div class="practice" data-practice="get">
+    <h3>Practice</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="get|Match the meaning">
+    <h3>Drill: Match the meaning</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="get|Rewrite with the verb">
+    <h3>Drill: Rewrite with the verb</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="get|Correct the particle">
+    <h3>Drill: Correct the particle</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  </section>
+
+  <section class="verb" data-verb="go">
+    <h2>go <small>2f</small></h2>
+    <table>
+      <thead><tr><th>Phrasal verb</th><th>Meaning</th><th>Перевод</th><th>Example</th><th>Unit</th></tr></thead>
+      <tbody>
+        <tr><td class="pv">go after</td><td>chase</td><td class="ru">гнаться за</td><td class="ex">The dog went after the kitten.</td><td class="unit">2f</td></tr>
+        <tr><td class="pv">go with</td><td>match</td><td class="ru">сочетаться</td><td class="ex">Does this pink shirt go with my blue trousers?</td><td class="unit">2f</td></tr>
+        <tr><td class="pv">go off</td><td>become bad (food)</td><td class="ru">испортиться</td><td class="ex">The cheese smells funny. It's probably gone off.</td><td class="unit">2f</td></tr>
+        <tr><td class="pv">go down with</td><td>become ill with</td><td class="ru">заболеть (чем-то)</td><td class="ex">Jane went down with the flu yesterday.</td><td class="unit">2f</td></tr>
+        <tr><td class="pv">go through</td><td>experience</td><td class="ru">переживать</td><td class="ex">Laura is going through a very difficult time.</td><td class="unit">2f</td></tr>
+        <tr><td class="pv">go without</td><td>manage without, lack</td><td class="ru">обходиться без</td><td class="ex">Camels can go without water longer than any other animal.</td><td class="unit">2f</td></tr>
+        <tr><td class="pv">go up</td><td>increase</td><td class="ru">расти, повышаться</td><td class="ex">The price of petrol has gone up again.</td><td class="unit">2f</td></tr>
+      </tbody>
+    </table>
+  <div class="practice" data-practice="go">
+    <h3>Practice</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="go|Match the meaning">
+    <h3>Drill: Match the meaning</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="go|Rewrite with the verb">
+    <h3>Drill: Rewrite with the verb</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="go|Correct the particle">
+    <h3>Drill: Correct the particle</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  </section>
+
+  <section class="verb" data-verb="bring">
+    <h2>bring <small>3f</small></h2>
+    <table>
+      <thead><tr><th>Phrasal verb</th><th>Meaning</th><th>Перевод</th><th>Example</th><th>Unit</th></tr></thead>
+      <tbody>
+        <tr><td class="pv">bring back</td><td>cause to recall</td><td class="ru">вызывать воспоминания</td><td class="ex">This song brings back happy memories from my childhood.</td><td class="unit">3f</td></tr>
+        <tr><td class="pv">bring up</td><td>raise (children)</td><td class="ru">растить, воспитывать</td><td class="ex">Cheltenham is an ideal place to bring up your children.</td><td class="unit">3f</td></tr>
+        <tr><td class="pv">bring about</td><td>cause to happen</td><td class="ru">вызывать, приводить к</td><td class="ex">The new government has brought about many changes in education.</td><td class="unit">3f</td></tr>
+        <tr><td class="pv">bring in</td><td>earn</td><td class="ru">приносить (доход)</td><td class="ex">My part-time job brings in £400 a month.</td><td class="unit">3f</td></tr>
+        <tr><td class="pv">bring round</td><td>make conscious again</td><td class="ru">привести в чувство</td><td class="ex">She passed out and we brought her round with a glass of water.</td><td class="unit">3f</td></tr>
+        <tr><td class="pv">bring out</td><td>put on the market</td><td class="ru">выпускать (новый продукт)</td><td class="ex">Shakira is bringing out a new album.</td><td class="unit">3f</td></tr>
+      </tbody>
+    </table>
+  <div class="practice" data-practice="bring">
+    <h3>Practice</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="bring|Match the meaning">
+    <h3>Drill: Match the meaning</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="bring|Rewrite with the verb">
+    <h3>Drill: Rewrite with the verb</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="bring|Correct the particle">
+    <h3>Drill: Correct the particle</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  </section>
+
+  <section class="verb" data-verb="put">
+    <h2>put <small>4f</small></h2>
+    <table>
+      <thead><tr><th>Phrasal verb</th><th>Meaning</th><th>Перевод</th><th>Example</th><th>Unit</th></tr></thead>
+      <tbody>
+        <tr><td class="pv">put away</td><td>tidy</td><td class="ru">убрать</td><td class="ex">When you have finished, put away your books.</td><td class="unit">4f</td></tr>
+        <tr><td class="pv">put off</td><td>arrange for another time</td><td class="ru">отложить</td><td class="ex">The match was put off until next weekend.</td><td class="unit">4f</td></tr>
+        <tr><td class="pv">put through</td><td>connect by phone</td><td class="ru">соединить (по телефону)</td><td class="ex">Can I be put through to Mr Smith, please?</td><td class="unit">4f</td></tr>
+        <tr><td class="pv">put on</td><td>dress oneself</td><td class="ru">надеть</td><td class="ex">It's cold. Put on a sweater.</td><td class="unit">4f</td></tr>
+        <tr><td class="pv">put out</td><td>stop (a fire)</td><td class="ru">потушить</td><td class="ex">The fire fighters managed to put out the fire.</td><td class="unit">4f</td></tr>
+        <tr><td class="pv">put up with</td><td>tolerate</td><td class="ru">терпеть</td><td class="ex">She couldn't put up with his rudeness.</td><td class="unit">4f</td></tr>
+      </tbody>
+    </table>
+  <div class="practice" data-practice="put">
+    <h3>Practice</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="put|Match the meaning">
+    <h3>Drill: Match the meaning</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="put|Rewrite with the verb">
+    <h3>Drill: Rewrite with the verb</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="put|Correct the particle">
+    <h3>Drill: Correct the particle</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  </section>
+
+  <section class="verb" data-verb="call">
+    <h2>call <small>5f</small></h2>
+    <table>
+      <thead><tr><th>Phrasal verb</th><th>Meaning</th><th>Перевод</th><th>Example</th><th>Unit</th></tr></thead>
+      <tbody>
+        <tr><td class="pv">call in</td><td>ask to come and help</td><td class="ru">вызвать (на помощь)</td><td class="ex">The fire fighters were called in to save the people.</td><td class="unit">5f</td></tr>
+        <tr><td class="pv">call in</td><td>visit briefly</td><td class="ru">заглянуть</td><td class="ex">John called in last Saturday to have lunch with us.</td><td class="unit">5f</td></tr>
+        <tr><td class="pv">call off</td><td>cancel</td><td class="ru">отменить</td><td class="ex">The match was called off due to bad weather.</td><td class="unit">5f</td></tr>
+        <tr><td class="pv">call for</td><td>need</td><td class="ru">требовать, нуждаться</td><td class="ex">The floods in the Philippines call for immediate action.</td><td class="unit">5f</td></tr>
+        <tr><td class="pv">call on</td><td>visit formally</td><td class="ru">навестить</td><td class="ex">The doctor called on my grandmother to check if she was OK.</td><td class="unit">5f</td></tr>
+      </tbody>
+    </table>
+  <div class="practice" data-practice="call">
+    <h3>Practice</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="call|Match the meaning">
+    <h3>Drill: Match the meaning</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="call|Rewrite with the verb">
+    <h3>Drill: Rewrite with the verb</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="call|Correct the particle">
+    <h3>Drill: Correct the particle</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  </section>
+
+  <section class="verb" data-verb="set">
+    <h2>set <small>6f</small></h2>
+    <table>
+      <thead><tr><th>Phrasal verb</th><th>Meaning</th><th>Перевод</th><th>Example</th><th>Unit</th></tr></thead>
+      <tbody>
+        <tr><td class="pv">set aside</td><td>save</td><td class="ru">откладывать (деньги)</td><td class="ex">I set aside some money for a special holiday.</td><td class="unit">6f</td></tr>
+        <tr><td class="pv">set in</td><td>begin and seem likely to continue</td><td class="ru">наступить, установиться</td><td class="ex">The summer was setting in and it was getting really hot.</td><td class="unit">6f</td></tr>
+        <tr><td class="pv">set off</td><td>start a journey</td><td class="ru">отправиться</td><td class="ex">Dad rented a jeep and we set off the next day.</td><td class="unit">6f</td></tr>
+        <tr><td class="pv">set back</td><td>slow down</td><td class="ru">задержать</td><td class="ex">They took hours to come and this set us back a bit.</td><td class="unit">6f</td></tr>
+      </tbody>
+    </table>
+  <div class="practice" data-practice="set">
+    <h3>Practice</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="set|Match the meaning">
+    <h3>Drill: Match the meaning</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="set|Rewrite with the verb">
+    <h3>Drill: Rewrite with the verb</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="set|Correct the particle">
+    <h3>Drill: Correct the particle</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  </section>
+
+  <section class="verb" data-verb="give">
+    <h2>give <small>7f</small></h2>
+    <table>
+      <thead><tr><th>Phrasal verb</th><th>Meaning</th><th>Перевод</th><th>Example</th><th>Unit</th></tr></thead>
+      <tbody>
+        <tr><td class="pv">give away</td><td>reveal (a secret)</td><td class="ru">выдать (секрет)</td><td class="ex">Tony gave away my secret.</td><td class="unit">7f</td></tr>
+        <tr><td class="pv">give up</td><td>stop trying</td><td class="ru">бросить, перестать</td><td class="ex">Don't give up trying and your marks will improve.</td><td class="unit">7f</td></tr>
+        <tr><td class="pv">give out</td><td>distribute</td><td class="ru">раздать</td><td class="ex">Diane, could you please give out the tests?</td><td class="unit">7f</td></tr>
+        <tr><td class="pv">give back</td><td>return</td><td class="ru">вернуть</td><td class="ex">Sorry, I've forgotten to give you back your dictionary!</td><td class="unit">7f</td></tr>
+        <tr><td class="pv">give away</td><td>donate, get rid of</td><td class="ru">отдать, раздать</td><td class="ex">I've given away all my textbooks from last year.</td><td class="unit">7f</td></tr>
+      </tbody>
+    </table>
+  <div class="practice" data-practice="give">
+    <h3>Practice</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="give|Match the meaning">
+    <h3>Drill: Match the meaning</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="give|Rewrite with the verb">
+    <h3>Drill: Rewrite with the verb</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="give|Correct the particle">
+    <h3>Drill: Correct the particle</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  </section>
+
+  <section class="verb" data-verb="take">
+    <h2>take <small>8f</small></h2>
+    <table>
+      <thead><tr><th>Phrasal verb</th><th>Meaning</th><th>Перевод</th><th>Example</th><th>Unit</th></tr></thead>
+      <tbody>
+        <tr><td class="pv">take up</td><td>begin as a hobby</td><td class="ru">заняться (хобби)</td><td class="ex">Why don't you take up tennis?</td><td class="unit">8f</td></tr>
+        <tr><td class="pv">take after</td><td>be like (a parent)</td><td class="ru">быть похожим на</td><td class="ex">Danny takes after his mum.</td><td class="unit">8f</td></tr>
+        <tr><td class="pv">take to</td><td>start to like</td><td class="ru">проникнуться симпатией</td><td class="ex">The children immediately took to their new tennis instructor.</td><td class="unit">8f</td></tr>
+        <tr><td class="pv">take off</td><td>remove (clothes)</td><td class="ru">снять (одежду)</td><td class="ex">Take off your tracksuit and put it in the washing machine.</td><td class="unit">8f</td></tr>
+        <tr><td class="pv">take off</td><td>leave the ground</td><td class="ru">взлететь</td><td class="ex">What time did the plane take off?</td><td class="unit">8f</td></tr>
+        <tr><td class="pv">take up</td><td>fill (time)</td><td class="ru">занимать (время)</td><td class="ex">Homework takes up most of my time on weekdays.</td><td class="unit">8f</td></tr>
+      </tbody>
+    </table>
+  <div class="practice" data-practice="take">
+    <h3>Practice</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="take|Match the meaning">
+    <h3>Drill: Match the meaning</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="take|Rewrite with the verb">
+    <h3>Drill: Rewrite with the verb</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  <div class="practice" data-practice="take|Correct the particle">
+    <h3>Drill: Correct the particle</h3>
+    <ol class="pitems"></ol>
+    <div class="pbtns"><button data-check>Check</button><button data-show>Show answers</button><button data-reset>Try again</button><span class="pscore"></span></div>
+  </div>
+  </section>
+</main>
+<footer>Phrasal verbs · Units 1f–8f · English in Use</footer>
+<script>
+  const q = document.getElementById("q");
+  q.addEventListener("input", () => {
+    const term = q.value.trim().toLowerCase();
+    document.querySelectorAll("section.verb").forEach(sec => {
+      let any = false;
+      sec.querySelectorAll("tbody tr").forEach(tr => {
+        const show = !term || tr.textContent.toLowerCase().includes(term);
+        tr.classList.toggle("hidden", !show);
+        if (show) any = true;
+      });
+      sec.classList.toggle("hidden", !any);
+    });
+  });
+
+const PRACTICE = {
+ "get": [
+  {
+   "tpl": "I couldn't get my point [[0]] at the meeting.",
+   "answers": [
+    "across"
+   ]
+  },
+  {
+   "tpl": "I'm sure you will [[0]] along well with your new classmates.",
+   "answers": [
+    "get",
+    "gets"
+   ]
+  },
+  {
+   "tpl": "Let's get it [[0]] with and finish the report today.",
+   "answers": [
+    "over"
+   ]
+  },
+  {
+   "tpl": "Her sad story really [[0]] me down.",
+   "answers": [
+    "gets",
+    "get"
+   ]
+  },
+  {
+   "tpl": "She still hasn't got [[0]] the loss of her dog.",
+   "answers": [
+    "over"
+   ]
+  }
+ ],
+ "go": [
+  {
+   "tpl": "The police went [[0]] the thief across the city.",
+   "answers": [
+    "after"
+   ]
+  },
+  {
+   "tpl": "That red scarf doesn't go [[0]] your green coat.",
+   "answers": [
+    "with"
+   ]
+  },
+  {
+   "tpl": "Don't eat that yogurt – it has gone [[0]].",
+   "answers": [
+    "off"
+   ]
+  },
+  {
+   "tpl": "My brother went [[0]] pneumonia last winter.",
+   "answers": [
+    "down with"
+   ]
+  },
+  {
+   "tpl": "Our family is going [[0]] a difficult time.",
+   "answers": [
+    "through"
+   ]
+  },
+  {
+   "tpl": "We can go [[0]] lunch if we have to, but we'd prefer not to.",
+   "answers": [
+    "without"
+   ]
+  },
+  {
+   "tpl": "Oil prices have gone [[0]] sharply this month.",
+   "answers": [
+    "up"
+   ]
+  }
+ ],
+ "bring": [
+  {
+   "tpl": "This old photo always brings [[0]] memories of my grandmother.",
+   "answers": [
+    "back"
+   ]
+  },
+  {
+   "tpl": "My aunt brought [[0]] five children on her own.",
+   "answers": [
+    "up"
+   ]
+  },
+  {
+   "tpl": "The new law will bring [[0]] changes in the way schools are funded.",
+   "answers": [
+    "about"
+   ]
+  },
+  {
+   "tpl": "Working weekends brings [[0]] some extra money.",
+   "answers": [
+    "in"
+   ]
+  },
+  {
+   "tpl": "The doctor brought him [[0]] after he fainted.",
+   "answers": [
+    "round"
+   ]
+  },
+  {
+   "tpl": "The company is bringing [[0]] a new version of its phone next year.",
+   "answers": [
+    "out"
+   ]
+  }
+ ],
+ "put": [
+  {
+   "tpl": "Please put [[0]] your bags before you sit down.",
+   "answers": [
+    "away"
+   ]
+  },
+  {
+   "tpl": "The concert has been put [[0]] until the spring.",
+   "answers": [
+    "off"
+   ]
+  },
+  {
+   "tpl": "Could you put me [[0]] to the manager, please?",
+   "answers": [
+    "through"
+   ]
+  },
+  {
+   "tpl": "It's raining, so put [[0]] your raincoat.",
+   "answers": [
+    "on"
+   ]
+  },
+  {
+   "tpl": "The firefighters put [[0]] the fire within an hour.",
+   "answers": [
+    "out"
+   ]
+  },
+  {
+   "tpl": "I can't put [[0]] with the noise from the building site.",
+   "answers": [
+    "up"
+   ]
+  }
+ ],
+ "call": [
+  {
+   "tpl": "The manager was called [[0]] to deal with the angry customer.",
+   "answers": [
+    "in"
+   ]
+  },
+  {
+   "tpl": "The football match was called [[0]] because of the snow.",
+   "answers": [
+    "off"
+   ]
+  },
+  {
+   "tpl": "The workers are calling [[0]] a pay rise.",
+   "answers": [
+    "for"
+   ]
+  },
+  {
+   "tpl": "My grandmother called [[0]] us on her way to the market.",
+   "answers": [
+    "in"
+   ]
+  },
+  {
+   "tpl": "The Prime Minister will call [[0]] the local school next week.",
+   "answers": [
+    "on"
+   ]
+  }
+ ],
+ "set": [
+  {
+   "tpl": "She sets [[0]] part of her salary every month for emergencies.",
+   "answers": [
+    "aside"
+   ]
+  },
+  {
+   "tpl": "The rain set [[0]] early in the afternoon.",
+   "answers": [
+    "in"
+   ]
+  },
+  {
+   "tpl": "We set [[0]] for the mountains at dawn.",
+   "answers": [
+    "off"
+   ]
+  },
+  {
+   "tpl": "The heavy snow set us [[0]] by two hours.",
+   "answers": [
+    "back"
+   ]
+  }
+ ],
+ "give": [
+  {
+   "tpl": "Don't give [[0]] the ending of the film to your sister!",
+   "answers": [
+    "away"
+   ]
+  },
+  {
+   "tpl": "After three hours of trying, he finally gave [[0]].",
+   "answers": [
+    "up"
+   ]
+  },
+  {
+   "tpl": "The teacher gave [[0]] the homework sheets at the end of the lesson.",
+   "answers": [
+    "out"
+   ]
+  },
+  {
+   "tpl": "I'll give your notes [[0]] to you tomorrow.",
+   "answers": [
+    "back"
+   ]
+  }
+ ],
+ "take": [
+  {
+   "tpl": "After retiring, my dad decided to take [[0]] painting.",
+   "answers": [
+    "up"
+   ]
+  },
+  {
+   "tpl": "Everyone says Emma takes [[0]] her father.",
+   "answers": [
+    "after"
+   ]
+  },
+  {
+   "tpl": "The little boy took [[0]] his new teacher at once.",
+   "answers": [
+    "to"
+   ]
+  },
+  {
+   "tpl": "Please take [[0]] your shoes before you enter the house.",
+   "answers": [
+    "off"
+   ]
+  },
+  {
+   "tpl": "The plane took [[0]] twenty minutes late.",
+   "answers": [
+    "off"
+   ]
+  },
+  {
+   "tpl": "Learning a language takes [[0]] a lot of time.",
+   "answers": [
+    "up"
+   ]
+  }
+ ]
+};
+const pnorm = s => s.trim().toLowerCase().replace(/\s+/g, " ");
+function buildPractice(box) {
+  const v = box.dataset.practice, list = box.querySelector(".pitems");
+  list.innerHTML = ""; box.querySelector(".pscore").textContent = "";
+  PRACTICE[v].forEach((item, idx) => {
+    const li = document.createElement("li");
+    item.tpl.split(/(\[\[\d+\]\])/).forEach(part => {
+      const m = part.match(/^\[\[(\d+)\]\]$/);
+      if (m) { const inp = document.createElement("input"); inp.type="text"; inp.autocomplete="off"; inp.dataset.blank=m[1]; inp.setAttribute("aria-label","answer"); li.appendChild(inp); }
+      else li.appendChild(document.createTextNode(part));
+    });
+    list.appendChild(li);
+  });
+}
+function checkPractice(box, showKey) {
+  const v = box.dataset.practice, lis = box.querySelectorAll(".pitems > li");
+  let correct = 0;
+  lis.forEach((li, idx) => {
+    const item = PRACTICE[v][idx];
+    li.querySelectorAll(".pcorr").forEach(n => n.remove());
+    li.classList.remove("ok","bad");
+    let allOk = true;
+    li.querySelectorAll("input").forEach(inp => {
+      const acc = item.answers.map(pnorm);
+      if (showKey) inp.value = item.answers[0];
+      const ok = acc.includes(pnorm(inp.value));
+      if (ok) correct++; else allOk = false;
+      if (!showKey && !ok) {
+        const s = document.createElement("span"); s.className="pcorr"; s.textContent = "→ " + item.answers[0];
+        inp.insertAdjacentElement("afterend", s);
+      }
+    });
+    if (showKey) li.classList.add("ok"); else li.classList.add(allOk ? "ok" : "bad");
+  });
+  const total = lis.length ? PRACTICE[v].reduce((n, it) => n + it.answers.length ? n + 1 : n, 0) : 0;
+  box.querySelector(".pscore").textContent = showKey ? "Answers shown" : `${[...lis].filter(li => li.classList.contains("ok")).length} / ${total} correct`;
+}
+Object.assign(PRACTICE, {"get|Match the meaning": [{"tpl": "“to communicate an idea successfully” → [[0]]", "answers": [["get across"]]}, {"tpl": "“to finish something unpleasant quickly” → [[0]]", "answers": [["get over with"]]}, {"tpl": "“to recover from a shock or loss” → [[0]]", "answers": [["get over"]]}], "get|Rewrite with the verb": [{"tpl": "Rewrite with get (past): She recovered from the shock quickly. → She [[0]] the shock quickly.", "answers": [["got over"]]}, {"tpl": "Rewrite with get: Your attitude makes me sad. → Your attitude [[0]] me [[1]].", "answers": [["gets", "get"], ["down"]]}, {"tpl": "Rewrite with get: Let's finish this job and be done with it. → Let's [[0]] it [[1]] with.", "answers": [["get"], ["over"]]}], "get|Correct the particle": [{"tpl": "“I couldn't get my point through at the meeting.” Correct particle: [[0]]", "answers": [["across"]]}, {"tpl": "“Alice hasn't been able to get through the fact that she failed.” Correct particle: [[0]]", "answers": [["over"]]}, {"tpl": "“This rainy weather gets me up.” Correct particle: [[0]]", "answers": [["down"]]}], "go|Match the meaning": [{"tpl": "“to chase someone or something” → [[0]]", "answers": [["go after"]]}, {"tpl": "“to become ill with a disease” → [[0]]", "answers": [["go down with"]]}, {"tpl": "“to experience a difficult time” → [[0]]", "answers": [["go through"]]}], "go|Rewrite with the verb": [{"tpl": "Rewrite with go (present perfect): Oil prices have increased sharply. → Oil prices have [[0]] sharply.", "answers": [["gone up"]]}, {"tpl": "Rewrite with go (present perfect): The milk is no longer fresh. → The milk has [[0]].", "answers": [["gone off"]]}, {"tpl": "Rewrite with go: We can manage without a car. → We can [[0]] a car.", "answers": [["go without"]]}], "go|Correct the particle": [{"tpl": "“That yellow hat doesn't go off my red coat.” Correct particle: [[0]]", "answers": [["with"]]}, {"tpl": "“The police went with the thief.” Correct particle: [[0]]", "answers": [["after"]]}, {"tpl": "“Laura is going over a difficult time.” Correct particle: [[0]]", "answers": [["through"]]}], "bring|Match the meaning": [{"tpl": "“to make someone remember something” → [[0]]", "answers": [["bring back"]]}, {"tpl": "“to raise a child” → [[0]]", "answers": [["bring up"]]}, {"tpl": "“to put a new product on the market” → [[0]]", "answers": [["bring out"]]}], "bring|Rewrite with the verb": [{"tpl": "Rewrite with bring: The new law will cause big changes. → The new law will [[0]] big changes.", "answers": [["bring about"]]}, {"tpl": "Rewrite with bring (past): Working at night earned him a lot of money. → Working at night [[0]] him a lot of money.", "answers": [["brought in"]]}, {"tpl": "Rewrite with bring (past): The nurse revived him after he fainted. → The nurse [[0]] him [[1]].", "answers": [["brought"], ["round"]]}], "bring|Correct the particle": [{"tpl": "“Working weekends brings up some extra money.” Correct particle: [[0]]", "answers": [["in"]]}, {"tpl": "“This photo always brings about memories of my grandmother.” Correct particle: [[0]]", "answers": [["back"]]}, {"tpl": "“The company is bringing in a new phone next year.” Correct particle: [[0]]", "answers": [["out"]]}], "put|Match the meaning": [{"tpl": "“to postpone something” → [[0]]", "answers": [["put off"]]}, {"tpl": "“to tolerate someone's behaviour” → [[0]]", "answers": [["put up with"]]}, {"tpl": "“to connect someone by phone” → [[0]]", "answers": [["put through"]]}], "put|Rewrite with the verb": [{"tpl": "Rewrite with put: The firefighters extinguished the fire. → The firefighters [[0]] the fire.", "answers": [["put out"]]}, {"tpl": "Rewrite with put: Please tidy your room. → Please [[0]] your room.", "answers": [["put away"]]}, {"tpl": "Rewrite with put (present): He dresses himself in a warm coat. → He [[0]] [[1]] a warm coat.", "answers": [["puts"], ["on"]]}], "put|Correct the particle": [{"tpl": "“Could you put me off to the manager, please?” Correct particle: [[0]]", "answers": [["through"]]}, {"tpl": "“Put away your raincoat, it's raining.” Correct particle: [[0]]", "answers": [["on"]]}, {"tpl": "“The concert has been put up until the spring.” Correct particle: [[0]]", "answers": [["off"]]}], "call|Match the meaning": [{"tpl": "“to cancel” → [[0]]", "answers": [["call off"]]}, {"tpl": "“to need something” → [[0]]", "answers": [["call for"]]}, {"tpl": "“to visit someone formally” → [[0]]", "answers": [["call on"]]}], "call|Rewrite with the verb": [{"tpl": "Rewrite with call (passive, past): The manager was asked to come and deal with the customer. → The manager was [[0]] [[1]].", "answers": [["called"], ["in"]]}, {"tpl": "Rewrite with call (past): They cancelled the match. → They [[0]] the match [[1]].", "answers": [["called"], ["off"]]}, {"tpl": "Rewrite with call (present continuous): The workers need a pay rise. → The workers are [[0]] a pay rise.", "answers": [["calling for"]]}], "call|Correct the particle": [{"tpl": "“My grandmother called on us on her way to the market.” Correct particle: [[0]]", "answers": [["in"]]}, {"tpl": "“The Prime Minister will call in the local school next week.” Correct particle: [[0]]", "answers": [["on"]]}, {"tpl": "“The football match was called in because of the snow.” Correct particle: [[0]]", "answers": [["off"]]}], "set|Match the meaning": [{"tpl": "“to save money for later” → [[0]]", "answers": [["set aside"]]}, {"tpl": "“to start a journey” → [[0]]", "answers": [["set off"]]}, {"tpl": "“to slow down or delay” → [[0]]", "answers": [["set back"]]}], "set|Rewrite with the verb": [{"tpl": "Rewrite with set (present continuous): She is saving some money for an emergency. → She is [[0]] [[1]] some money for an emergency.", "answers": [["setting"], ["aside"]]}, {"tpl": "Rewrite with set (past): The rain began early in the afternoon. → The rain [[0]] [[1]] early in the afternoon.", "answers": [["set"], ["in"]]}, {"tpl": "Rewrite with set (past): We left for the mountains at dawn. → We [[0]] [[1]] for the mountains at dawn.", "answers": [["set"], ["off"]]}], "set|Correct the particle": [{"tpl": "“The rain set off early in the afternoon.” Correct particle: [[0]]", "answers": [["in"]]}, {"tpl": "“The heavy snow set us off by two hours.” Correct particle: [[0]]", "answers": [["back"]]}, {"tpl": "“We set aside for the mountains at dawn.” Correct particle: [[0]]", "answers": [["off"]]}], "give|Match the meaning": [{"tpl": "“to reveal a secret” → [[0]]", "answers": [["give away"]]}, {"tpl": "“to stop trying” → [[0]]", "answers": [["give up"]]}, {"tpl": "“to distribute” → [[0]]", "answers": [["give out"]]}], "give|Rewrite with the verb": [{"tpl": "Rewrite with give (negative imperative): Don't reveal the ending. → Don't [[0]] the ending [[1]].", "answers": [["give"], ["away"]]}, {"tpl": "Rewrite with give (past): He stopped trying after three hours. → He [[0]] [[1]] after three hours.", "answers": [["gave"], ["up"]]}, {"tpl": "Rewrite with give: I'll return your notes tomorrow. → I'll [[0]] your notes [[1]] tomorrow.", "answers": [["give"], ["back"]]}], "give|Correct the particle": [{"tpl": "“Diane, could you please give back the tests?” Correct particle: [[0]]", "answers": [["out"]]}, {"tpl": "“I've given out all my textbooks from last year.” Correct particle: [[0]]", "answers": [["away"]]}, {"tpl": "“Tony gave up my secret.” Correct particle: [[0]]", "answers": [["away"]]}], "take|Match the meaning": [{"tpl": "“to begin a hobby” → [[0]]", "answers": [["take up"]]}, {"tpl": "“to resemble a parent” → [[0]]", "answers": [["take after"]]}, {"tpl": "“to start to like someone” → [[0]]", "answers": [["take to"]]}], "take|Rewrite with the verb": [{"tpl": "Rewrite with take (present, 3rd person): She resembles her mother. → She [[0]] [[1]] her mother.", "answers": [["takes"], ["after"]]}, {"tpl": "Rewrite with take (imperative): Remove your coat. → [[0]] [[1]] your coat.", "answers": [["Take"], ["off"]]}, {"tpl": "Rewrite with take (past): The plane left the ground late. → The plane [[0]] [[1]] late.", "answers": [["took"], ["off"]]}], "take|Correct the particle": [{"tpl": "“Homework takes off most of my time on weekdays.” Correct particle: [[0]]", "answers": [["up"]]}, {"tpl": "“My dad decided to take off painting after he retired.” Correct particle: [[0]]", "answers": [["up"]]}, {"tpl": "“The children immediately took after their new tennis instructor.” Correct particle: [[0]]", "answers": [["to"]]}]});
+document.querySelectorAll(".practice").forEach(box => {
+  buildPractice(box);
+  box.querySelector("[data-check]").addEventListener("click", () => checkPractice(box, false));
+  box.querySelector("[data-show]").addEventListener("click", () => checkPractice(box, true));
+  box.querySelector("[data-reset]").addEventListener("click", () => buildPractice(box));
+});
+</script>
+</body>
+</html>
